@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="/assets/logo icon.svg">
     <title>GrocerEase</title>
 </head>
 <body>
@@ -29,7 +30,11 @@
         <div class="buttons flex">
           <div class="flex">
             <img src="assets/Search icon.svg" alt="Search" class="search-logo">
-            <input type="text" placeholder="Search">
+            <div class="suggest flex">
+              <input type="text" id="searchInput" placeholder="Search" oninput="showSuggestions(this.value)">
+            <div id="suggestions"></div>
+            </div>
+            
           </div>
           <div class="login flex">
             <img src="assets/login icon.svg" alt="Login">
@@ -37,7 +42,6 @@
           </div>
         </div>
       </nav>
-
       <!--landing page-->
       <div class="slideshow-container">
         <div class="mySlides fade">
@@ -248,6 +252,7 @@
     </div>
 
     <script src="slide.js"></script>
+    <script src="suggestion.js"></script>
     <script src="https://kit.fontawesome.com/f86635c9c3.js" crossorigin="anonymous"></script>
 
 </body>
