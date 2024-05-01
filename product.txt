@@ -1,0 +1,57 @@
+ <!--product-->
+      <div class="products flex">
+        <div class="product product1">
+          <img src="assets/product1.svg" alt="Tata Salt">
+          <h3>Tata Salt</h3>
+          <p><span>6 Days Remaining</span></p>
+        </div>
+        <div class="product product2">
+          <img src="assets/product2.svg" alt="Kellogg’s Muesli">
+          <h3>Kellogg’s Muesli</h3>
+          <p><span>6 Days Remaining</span></p>
+        </div>
+        <div class="product product3">
+          <img src="assets/product3.svg" alt="Real - Mixed fruit">
+          <h3>Real - Mixed fruit</h3>
+          <p><span>6 Days Remaining</span></p>
+        </div>
+        <div class="product product4">
+          <img src="assets/product4.svg" alt="Sugar Free - Natura">
+          <h3>Sugar Free - Natura</h3>
+          <p><span>6 Days Remaining</span></p>
+        </div>
+      </div>
+
+/*product*/
+  .products{
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.products h3{
+    color: #424242;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.products p{
+    width: 204px;
+    height: 38px;
+    background-color: #fcccbe;
+    border-radius: 8px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.products p{
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2px;
+    color: #f17228;
+    position: absolute;
+    margin-top: 6px;
+}
+.product p span{
+  margin-top: 5px;
+}
